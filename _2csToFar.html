@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>ცელსიუსის გადაყვანა ფარენგეიტში</h2>
+
+<a href="?">თავიდან გაშვება</a>    
+    
+<script>
+
+
+function solve(x) {
+  return x * 33.8;
+}
+    
+    
+    
+    
+let number = prompt("გთხოვთ შეიყვანოთ სასურველი ცელსიუსი");
+    
+if (isNaN(number)) 
+   console.log("თქვენი შეტანილი მონაცემი არ არის რიცხვი");
+else
+   console.log( ` ${number}°C = ${solve(number)}°F`);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>რიცხვის შემოწმება დიაპაზონში</h2>
+
+<a href="?">თავიდან გაშვება</a>    
+    
+<script>
+
+
+    
+let number = prompt("გთხოვთ შეიყვანოთ სასურველი რიცხვი");
+let start = prompt("გთხოვთ შეიყვანოთ დიაპაზონის საწყისი");
+let end = prompt("გთხოვთ შეიყვანოთ დიაპაზონის ბოლო");
+    
+if (isNaN(number) || isNaN(start) || isNaN(end)  ) 
+   console.log("თქვენი შეტანილი მონაცემი არ არის რიცხვი");
+else
+    {
+    if (start>end)
+   console.log("დიაპაზონის საწყისი მეტია დიაპაზონის ბოლოზე, გთხოვთ გაასწორეთ!");
+    else
+        {
+            if (start<=number && number<=end)
+                console.log("თქვენი შეყვანილი რიცხვი მოთავსებულია დიაპაზონში");
+            else
+                console.log("თქვენი შეყვანილი რიცხვი არ არის მოთავსებული დიაპაზონში");
+       }
+        
+        
+    };
+        
+
+</script>
+
+</body>
+</html>

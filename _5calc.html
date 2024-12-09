@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>კალკულატორი</h2>
+
+<a href="?">თავიდან გაშვება</a>    
+    
+<script>
+
+
+    
+let number1 = prompt("გთხოვთ შეიყვანოთ რიცხვი1");
+let number2 = prompt("გთხოვთ შეიყვანოთ რიცხვი2");
+let act = prompt("გთხოვთ შეიყვანოთ მოქმედება (+, -, :, *)");
+    
+if (isNaN(number1) || isNaN(number2) ) 
+   console.log("თქვენი შეტანილი მონაცემი არ არის რიცხვი");
+else if (act!='+' && act!='-' && act!=':' && act!='*' ) 
+   console.log("თქვენი შეტანილი მოქმედების სიმბოლო გასასწორებელია");
+else
+    {
+    if (act === "+")
+            console.log(` ${number1} + ${number2} = ${parseInt(number1)+parseInt(number2)} `);
+    
+    if (act === "-")
+            console.log(` ${number1} - ${number2} = ${parseInt(number1)-parseInt(number2)} `);
+    
+    if (act === ":")
+            console.log(` ${number1} : ${number2} = ${parseInt(number1)/parseInt(number2)} `);
+    
+    if (act === "*")
+            console.log(` ${number1} * ${number2} = ${parseInt(number1)*parseInt(number2)} `);
+    
+        
+        
+    };
+        
+
+</script>
+
+</body>
+</html>
